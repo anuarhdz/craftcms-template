@@ -1,0 +1,13 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% extends "_layouts/site" %}
+
+{% block inline_css %}
+    {# "_critical/#{entry.type.handle}-critical.min.css" #}
+    {{ source ("_critical/index-critical.min.css", ignore_missing = true) }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>Hello! I'm Ready 😎</h1>
+{% endblock %}
